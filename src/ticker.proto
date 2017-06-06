@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+import "google/protobuf/timestamp.proto";
+
+
+message Ticker {
+
+  google.protobuf.Timestamp timestamp = 1;
+  string currency = 2;
+  float last = 3;
+  float lowestAsk = 4;
+  float highestBid = 5;
+  float percentChange = 6;
+  float baseVolume = 7;
+  float quoteVolume = 8;
+  bool isFrozen = 9;
+  float twentyFourHrHigh = 10;
+  float twentyFourHrLow = 11;
+
+}
